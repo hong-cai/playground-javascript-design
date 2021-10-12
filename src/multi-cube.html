@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .screen-carousel {
+            width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            -webkit-perspective: 1000px;
+            box-shadow: 0 16px 50px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+            .one-screen {
+                width: 200px;
+                height: 200px;
+                transition: transform 300ms linear;
+                transform-style: preserve-3d;
+                -webkit-transform-style: preserve-3d;
+                .up-image {
+                    height: 100%;
+                    width: 100%;
+                    transform: translate3d(0, 0, 100px);
+                    -webkit-transform: translate3d(0, 0, 100px);
+                    -moz-transform: translate3d(0, 0, 100px);
+                    -ms-transform: translate3d(0, 0, 100px);
+                    -o-transform: translate3d(0, 0, 100px);
+                }
+                .down-image {
+                    height: 100%;
+                    width: 100%;
+                    transform: rotateX(-90deg) translateZ(-100px);
+                    -webkit-transform: rotateX(-90deg) translateZ(-100px);
+                    -moz-transform: rotateX(-90deg) translateZ(-100px);
+                    -ms-transform: rotateX(-90deg) translateZ(-100px);
+                    -o-transform: rotateX(-90deg) translateZ(-100px);
+                }
+            }
+        }
+        
+        @media screen and (min-width: 1300px) {
+            .screen-carousel {
+                width: 900px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                -webkit-perspective: 1000px;
+                .one-screen {
+                    width: 300px;
+                    height: 300px;
+                    .up-image {
+                        transform: translate3d(0, 0, 100px);
+                        -webkit-transform: translate3d(0, 0, 100px);
+                        -moz-transform: translate3d(0, 0, 100px);
+                        -ms-transform: translate3d(0, 0, 100px);
+                        -o-transform: translate3d(0, 0, 100px);
+                    }
+                    .down-image {
+                        transform: rotateX(-90deg) translateZ(-150px);
+                        -webkit-transform: rotateX(-90deg) translateZ(-150px);
+                        -moz-transform: rotateX(-90deg) translateZ(-150px);
+                        -ms-transform: rotateX(-90deg) translateZ(-150px);
+                        -o-transform: rotateX(-90deg) translateZ(-150px);
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="screen">
+        <div class="blur-bg"></div>
+        <!-- titile -->
+        <div class="service-title">
+            <div class="title">
+                <h1>Cube Carousel</h1>
+                <div class="title-underline">
+                    <br />
+                </div>
+            </div>
+            <br />
+            <!-- end of title -->
+
+
+            <div class="screen-carousel">
+                <!-- article -->
+                <article class="one-screen">
+                    <div class="up-image">
+                    </div>
+                    <div class="down-image">
+                    </div>
+                </article>
+                <!-- end of article -->
+                <!-- article -->
+                <article class="one-screen">
+                    <div class="up-image">
+                    </div>
+                    <div class="down-image">
+                    </div>
+                </article>
+                <!-- end of article -->
+                <!-- article -->
+                <article class="one-screen">
+                    <div class="up-image">
+                    </div>
+                    <div class="down-image">
+
+                    </div>
+
+                </article>
+                <!-- end of article -->
+                <!-- article -->
+                <article class="one-screen">
+                    <div class="up-image">
+                    </div>
+                    <div class="down-image">
+
+                    </div>
+
+                </article>
+                <!-- end of article -->
+                <!-- article -->
+                <article class="one-screen">
+                    <div class="up-image">
+                    </div>
+                    <div class="down-image">
+                        <!-- This is the text/button added in the middle -->
+                    </div>
+
+                </article>
+                <!-- end of article -->
+                <!-- article -->
+                <article class="one-screen">
+                    <div class="up-image">
+                    </div>
+                    <div class="down-image">
+                    </div>
+
+                </article>
+                <!-- end of article -->
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
